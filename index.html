@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PutOnYourMask</title>
+        <title>PutYourMaskOn</title>
     </head>
     <body>
-        <div>Teachable Machine Image Model</div>
+        <h1>PutYourMaskOn</h1>
+        <h2>주제탐구 마스크 인식 웹사이트</h2>
         <button type="button" onclick="init()">Start</button>
         <div id="webcam-container"></div>
         <div id="label-container"></div>
@@ -33,7 +34,7 @@
 
                 // Convenience function to setup a webcam
                 const flip = true; // whether to flip the webcam
-                webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+                webcam = new tmImage.Webcam(500, 500, flip); // width, height, flip
                 await webcam.setup(); // request access to the webcam
                 await webcam.play();
                 window.requestAnimationFrame(loop);
